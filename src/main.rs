@@ -9,9 +9,8 @@ fn main() -> Result<()> {
     let args: Vec<String> = env::args().collect();
 
     // Check if at least one argument is provided (first is the program name)
-    println!("{:?}", args.len());
     if args.len() < 2 {
-        eprintln!("Usage: {} <mandatory_arg>", args[0]);
+        println!("Please provide a directory/project name.");
         process::exit(1);
     }
     let directory_name = &args[1];
