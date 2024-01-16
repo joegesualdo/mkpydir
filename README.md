@@ -5,3 +5,7 @@
 ```bash
 mkpydir my-project
 ```
+
+This will create two files:
+- `environment.yml` (conda)
+- `requirements.txt` (pip)
